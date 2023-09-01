@@ -30,7 +30,8 @@ cmp.setup({
         end,
       },
     },
-    { name = 'luasnip' }
+    { name = 'luasnip' },
+    { name = 'nvim_lsp' }
   },
 })
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
