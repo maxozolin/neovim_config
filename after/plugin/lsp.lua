@@ -14,6 +14,19 @@ lsp.nvim_workspace()
 
 
 local cmp = require('cmp')
+cmp.setup({
+    sources = {
+        {
+            name = 'spell',
+            option = {
+                keep_all_entries = false,
+                enable_in_context = function()
+                    return true
+                end,
+            },
+        },
+    },
+})
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
