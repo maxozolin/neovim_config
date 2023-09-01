@@ -111,4 +111,11 @@ return require('packer').startup(function(use)
 
   use { 'f3fora/cmp-spell' }
   use { 'ThePrimeagen/vim-be-good' }
+  use {
+    'L3MON4D3/LuaSnip',
+    tag = "v2.*",
+    run = "make install_jsregexp"
+  }
+  use { "rafamadriz/friendly-snippets" }
+  use { 'saadparwaiz1/cmp_luasnip' }
 end)
