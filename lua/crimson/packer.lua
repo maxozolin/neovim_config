@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
   --   run = ':TSUpdate'
   -- }
 
-  use { 'nvim-treesitter/playground' }
+  -- use { 'nvim-treesitter/playground' }
   use { 'nvim-lua/plenary.nvim' }
   use { 'ThePrimeagen/harpoon' }
   use { 'mbbill/undotree' }
@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
   }
 
   use { 'tpope/vim-commentary' }
-  use { 'windwp/nvim-ts-autotag' }
+  -- use { 'windwp/nvim-ts-autotag' }
 
 
   use { 'zbirenbaum/copilot-cmp' }
