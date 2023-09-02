@@ -57,11 +57,15 @@ vim.keymap.set("n", "<leader>ds", "<cmd>setlocal spell spelllang=<CR>")
 -- Word replace
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>")
 
 -- vim.keymap.set("n", "<leader><leader>", function()
 --     vim.cmd("so")
 -- end)
+--
+
+-- view error
+vim.keymap.set("n", "<leader>ve", vim.diagnostic.open_float)
 
 
 
