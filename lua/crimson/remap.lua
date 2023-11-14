@@ -46,6 +46,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tms<CR>")
 
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>t", vim.lsp.buf.hover)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -66,6 +67,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>")
 
 -- view error
 vim.keymap.set("n", "<leader>ve", vim.diagnostic.open_float)
+
+-- copilot autotrigger
+vim.keymap.set("n", "<leader>cc", require("copilot.suggestion").toggle_auto_trigger)
 
 
 
