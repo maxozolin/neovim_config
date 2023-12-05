@@ -53,6 +53,7 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>es", "<cmd>setlocal spell spelllang=en_us<CR>")
 vim.keymap.set("n", "<leader>ds", "<cmd>setlocal spell spelllang=<CR>")
+vim.keymap.set("n", "<leader>cc", require("copilot.suggestion").toggle_auto_trigger)
 
 -- Word replace
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
