@@ -8,8 +8,8 @@
 --   },
 -- })
 require('copilot').setup({
-  -- panel = {
-  --   enabled = true,
+  -- panel = { 
+  --   enabled = true ,
   --   auto_refresh = false,
   --   keymap = {
   --     jump_prev = "[[",
@@ -37,18 +37,18 @@ require('copilot').setup({
     },
   },
   filetypes = {
-    yaml = false,
-    markdown = false,
-    help = false,
-    gitcommit = false,
-    gitrebase = false,
-    hgcommit = false,
-    svn = false,
-    cvs = false,
-    ["."] = false,
-    python=true,
+    javascript = true, -- allow specific filetype
+    typescript = true, -- allow specific filetype
+    typescriptreact = true, -- allow specific filetype
+    bash = true, -- allow specific filetype
+    python = true, -- allow specific filetype
+    sh = true, -- allow specific filetype
+    ["*"] = false,     -- disable for all other filetypes and ignore default `filetypes`
   },
   copilot_node_command = 'node', -- Node.js version must be > 18.x
   server_opts_overrides = {},
 })
-require('copilot_cmp').setup()
+
+require('copilot_cmp').setup({
+ panel = { enabled = false }, 
+})
