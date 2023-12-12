@@ -71,7 +71,3 @@ vim.keymap.set("n", "<leader>ve", vim.diagnostic.open_float)
 
 -- copilot autotrigger
 vim.keymap.set("n", "<leader>cc", require("copilot.suggestion").toggle_auto_trigger)
-
-
-
-
